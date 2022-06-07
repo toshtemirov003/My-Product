@@ -1,0 +1,44 @@
+.card {
+    width: 100%;
+    max-width: 348px;
+}
+
+.card__wrapper {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    width: 348px;
+    height: 186px;
+}
+
+.card-body {
+    padding: 24px 30px 40px 24px;
+}
+
+.card-text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: $color-blue-black;
+}
+
+.card-text--color {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: $color-mystic;
+}
+
+@include breakpoint-down(520px) {
+    .card__wrapper {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
